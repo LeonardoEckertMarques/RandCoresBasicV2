@@ -17,4 +17,4 @@ for i in range(6):
 hex = '#'
 c.rgb.append(hex)
 c.rgb.append(''.join(map(str, c.cores)))
-print(''.join(c.rgb),)
+print(''.join(c.rgb))
