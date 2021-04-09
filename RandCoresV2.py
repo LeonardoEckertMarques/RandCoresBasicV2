@@ -10,8 +10,7 @@ c = RandCores()
 
 for i in range(6):
     c.cores.append(random.randint(1,15))
-    cores = c.cores[i]
-    if cores == 10 or cores == 11 or cores == 12 or cores == 13 or cores == 14 or cores == 15:
+    if c.cores[i] > 9:
         c.cores[i] = ''.join(hex(c.cores[i]).split('0x'))
 
 hex = '#'
